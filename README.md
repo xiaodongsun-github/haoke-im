@@ -25,6 +25,9 @@ docker start mongodb
 # 进入容器
 docker exec -it mongodb /bin/bash
 
+# 客户端连接时，指定用户名，密码，db名称
+mongo --port 27017 -u "root" -p "admin" --authenticationDatabase "admin"
+
 # 使用MongoDB客户端进行操作
 mongo
 # 查询所有的数据库
