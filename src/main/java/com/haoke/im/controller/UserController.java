@@ -37,7 +37,7 @@ public class UserController {
         for(Map.Entry<Long, User> userEntry: UserData.USER_MAP.entrySet()){
             Map<String, Object> map = new HashMap<>();
             map.put("id", userEntry.getValue().getId());
-            map.put("avatar", "http://");
+            map.put("avatar", "http://haoke-repository.oss-cn-shanghai.aliyuncs.com/images/2019/01/29/15487475784488060.jpg");
             map.put("from_user", fromId);
             map.put("info_type", null);
             map.put("to_user", map.get("id"));
